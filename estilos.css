@@ -36,10 +36,23 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    padding: 30px;
+    padding: 20px;
 }
 
-.logo img{
-    max-height: 70px;
-    max-width: 200px;
+.logo > img{
+    max-height: 100px;
+    width: 200px;
+}
+
+.redes{
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.fa-brands{
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 15px;
 }
