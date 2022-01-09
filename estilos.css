@@ -5,10 +5,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-.navbar-collapse{
+.iconos{
     display: flex;
-    justify-content: space-between;
+    flex-flow: wrap;
 }
 
 #encabezado{
@@ -28,12 +27,6 @@
     margin: 7%;
 }
 
-.nav{
-    background-color: #212F3D;
-    color: white;
-    justify-content: space-between;
-    display: flex;
-}
 
 .ini-text{
     color: white;
