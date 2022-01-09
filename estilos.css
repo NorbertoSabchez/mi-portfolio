@@ -15,9 +15,19 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    background-image: url(../mi-portafolio/assets/fondo-negro.jpg);
     max-width: 100%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-image: linear-gradient(135deg,#1C2833,#4A235A,#4A235A,#9B59B6);
+    animation: banimado 15s;
+    background-size: 500%;
+}
+
+@keyframes banimado {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
 }
 
 
@@ -100,4 +110,20 @@
 .btn-violeta:hover{
     color: white;
     background-color: black;
+}
+
+.text1{
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{
+    animation: text 6s 1;
+}
+
+@keyframes text {
+    0%{
+        opacity: 0;
+        margin-bottom: -40px;
+    }
 }
