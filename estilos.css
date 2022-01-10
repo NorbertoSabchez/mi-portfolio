@@ -179,8 +179,9 @@
     color: #363d44;
 }
 
-h1{
+h1, h2{
     font-weight: bold;
+    margin-bottom: 30px;
 }
  .habilidad{
      display: block;
@@ -202,26 +203,17 @@ h1{
     margin-bottom: 10px;
 }
 
-.p-line span{
-    height: 100%;
-    width: 80%;
-    background:#7D3C98;
-    border-radius: 10px;
-    display: flex;
-    transform: scaleX(0);
-    transform-origin: left;
-}
+
 
 .p-line span{
     height: 100%;
-    width: 80%;
     background:#7D3C98;
     border-radius: 10px;
     display: flex;
     transform: scaleX(0);
     transform-origin: left;
     font: 12px bold;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 
@@ -232,6 +224,31 @@ h1{
     width: 0;
     border: 7px solid transparent;
 }
+
+.html span{
+    width: 100%;
+}
+ .css span, .js span{
+    width: 90%;
+}
+
+.bootstrap span, .github span, .angular span{
+    width: 75%;
+}
+
+.react span{
+    width: 60%;
+}
+
+.node span{
+    width: 50%;
+}
+
+.java span{
+    width: 45%;
+}
+
+
 
 @keyframes progres {
     100%{
