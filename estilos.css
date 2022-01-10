@@ -86,7 +86,7 @@
     color: white;
 }
 
-.p-cont{
+.p-cont,.p-hab{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -125,5 +125,116 @@
     0%{
         opacity: 0;
         margin-bottom: -40px;
+    }
+}
+
+.slider{
+    background-color: #7D3C98;
+    width: 960px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slider::before,.slider::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 100px;
+    z-index: 2;
+    background: linear-gradient(to right, #7D3C98 0%, rgba(255,255,255,0) 100%);
+}
+
+.slider::before{
+    top: 0;
+    left: 0;
+}
+
+.slider::after{
+    top: 0;
+    right: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider .slider-track{
+    display: flex;
+    width: calc(274px * 14);
+    animation: scroll 20s infinite linear;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-274px * 7));
+    }
+}
+
+.tec{
+    font-size: 80px;
+    width: 250px;
+    color: #363d44;
+}
+
+h1{
+    font-weight: bold;
+}
+ .habilidad{
+     display: block;
+     margin: 5px;
+ }
+
+ .habilidad:hover span{
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: progres 1s cubic-bezier(1,0,0.5,1) forwards;
+ }
+
+ 
+.p-line{
+    height: 15px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.p-line span{
+    height: 100%;
+    width: 80%;
+    background:#7D3C98;
+    border-radius: 10px;
+    display: flex;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.p-line span{
+    height: 100%;
+    width: 80%;
+    background:#7D3C98;
+    border-radius: 10px;
+    display: flex;
+    transform: scaleX(0);
+    transform-origin: left;
+    font: 12px bold;
+    font-family: 'Roboto', sans-serif;;
+    color: white;
+}
+
+.p-line span::before{
+    display: flex;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+}
+
+@keyframes progres {
+    100%{
+        transform: scaleX(1);
     }
 }
