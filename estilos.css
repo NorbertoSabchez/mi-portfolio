@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.est-flex{
+    display: flex;
+    justify-content: space-between;
+}
 .iconos{
     display: flex;
     flex-flow: wrap;
