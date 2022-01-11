@@ -138,6 +138,7 @@
     overflow: hidden;
     position: relative;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .slider::before,.slider::after{
@@ -162,7 +163,7 @@
 
 .slider .slider-track{
     display: flex;
-    width: calc(274px * 14);
+    width: calc(256px * 14);
     animation: scroll 20s infinite linear;
 }
 
@@ -172,14 +173,20 @@
         transform: translateX(0%);
     }
     100%{
-        transform: translateX(calc(-274px * 7));
+        transform: translateX(calc(-256px * 7));
     }
 }
 
 .tec{
     font-size: 80px;
     width: 250px;
-    color: #363d44;
+    color: white;
+}
+
+.tec2{
+    font-size: 80px;
+    width: 250px;
+    color: #1C2833;
 }
 
 h1, h2{
