@@ -255,3 +255,13 @@ h1, h2{
         transform: scaleX(1);
     }
 }
+
+.edu-ico{
+    width: 5%;
+    height: 5%;
+}
+
+.arg{
+    width: 10%;
+    height: 10%;
+}
