@@ -4,6 +4,17 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.info-proyecto{
+    color: black;
+}
+
+h5 {
+    color: white;
+    font-weight: bolder;
+    background-color: #2E4053;
+    border-radius: 5px;
+}
 .est-flex{
     display: flex;
     justify-content: space-between;
